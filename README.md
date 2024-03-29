@@ -5,6 +5,7 @@ The goal is to keep everything free tier accessible
 ## Build the Docker images
 
 `sudo docker build -f Dockerfile.api -t api .`
+
 `sudo docker build -f Dockerfile.client -t client .`
 
 ## Run the docker images
@@ -13,5 +14,7 @@ The goal is to keep everything free tier accessible
  - ya gotta run it in order. Mongo, then the api, then the client
 
 `sudo docker run -p 27017:27017 mongo:4.4`
+
 `sudo docker run -p 5000:5000 api`
+
 `sudo docker run -p 3000:3000 client`
